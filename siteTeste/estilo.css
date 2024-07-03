@@ -1,0 +1,56 @@
+* {
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: dimgray;
+ height: 2000px;
+}
+
+
+header {
+
+  margin-bottom:100px;
+}
+
+#entenda {
+  position: fixed;
+  list-style: none;
+  background-color: blueviolet;
+  padding: 0;
+ width: 100%;
+ top: 0;
+ left: 0;
+}
+
+#entenda li {
+  display: inline;
+
+}
+
+#entenda li a {
+  color: rgb(214, 226, 43);
+  padding: 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+  .formulario{
+    border: 2px solid #000;
+    border-radius: 20px;
+    background-color: azure;
+    text-align: center;
+    width: 200px;
+    padding-top: 20px;
+     padding-bottom: 50px;
+     margin-left: auto;
+     margin-right: auto;
+  }
+  input{
+   margin-top: 20px;
+   border: solid 2px;
+  border-radius: 10px;
+  padding:2px 2px 2px 2px ;
+  }
