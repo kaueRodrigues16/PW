@@ -1,0 +1,41 @@
+*{
+    margin:0;
+  box-sizing:border-box ;
+}
+body{
+    height: 1000px;
+}
+.header{
+    height: 40px;
+    width: 100%;
+    background-color:rgb(43, 255, 0);
+    padding-top: 10px;
+    margin-bottom: 20PX;
+}
+
+ .f,li, a{
+    display: inline;
+    text-decoration: none;
+    padding-right:50px ;
+ }
+ /*caso queira que uma classe sofre os mesmo efeito de ouros tags
+ coloque ".classeDesejada +','+tagDesejada"*/
+
+.nav{
+    text-decoration: none;
+display: inline;
+}
+
+.formulario{
+    border: solid;
+    color:black;
+    width: 400px;
+   padding-left: 50px;
+   padding-bottom:20px ;
+   padding-top:20px;
+   display:flex;
+}
+
+.f2{
+   margin-top:50px;
+}
