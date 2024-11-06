@@ -1,0 +1,29 @@
+*{
+    margin:0;
+
+}
+
+body{
+   height:1000px;
+}
+
+header{
+   width: 100%;
+   background-color: blueviolet;
+    height: 40px;
+    padding-top:10px ;
+    position: relative;
+    z-index: 1;
+}
+
+.nome,li,a{
+    list-style: none;
+
+    display: inline;
+    padding-right: 50px;
+}
+
+form {
+    position: relative;  /* Garantir que o formulário fique na camada superior */
+    z-index: 10;         /* Garantir que o formulário apareça acima de outros elementos */
+}
