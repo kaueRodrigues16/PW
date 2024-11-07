@@ -18,9 +18,16 @@ header{
 
 .nome,li,a{
     list-style: none;
-
+     text-decoration: none;
     display: inline;
     padding-right: 50px;
+    
+}
+
+nav a:hover {
+    opacity: 0.7;
+    border-radius: 20px;
+    color: #cefa09;
 }
 
 form {

@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?php include 'header.php';?>
     <!-- "<"?php include 'nome.php' ?">" iclui arquivos de uma pasta em outra -->
     <form>
     <input type="text" name="n1">
