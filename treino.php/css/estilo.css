@@ -11,24 +11,34 @@ header{
    width: 100%;
    background-color: blueviolet;
     height: 40px;
-    padding-top:10px ;
+    padding-top:20px ;
     position: relative;
     z-index: 1;
 }
 
 .nome,li,a{
+    padding-top: 10px;
+    display:inline-block;
     list-style: none;
+    text-align: center; 
      text-decoration: none;
     display: inline;
     padding-right: 50px;
+    border:2px solide transparent;
+    border-radius: 20px;
+    padding: 10px 20px
+   
     
 }
 
 nav a:hover {
-    opacity: 0.7;
+    opacity: 0.7
     border-radius: 20px;
-    color: #cefa09;
+    background-color: #fff134;/*isso que altera a cor de fundo do link*/
+margin-left: 1px;
+color: white;
 }
+
 
 form {
     position: relative;  /* Garantir que o formulário fique na camada superior */

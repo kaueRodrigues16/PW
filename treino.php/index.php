@@ -13,21 +13,52 @@
      
      
      <form action="index.php" method="get">
-    <input type="number" name="number1">
+    <input type="number" name="number1" required>
        <br>
-    <input type="number" name="number2">
+    <input type="number" name="number2" required>
   
     <br>
+    <select name="operação" required>
+        <option value="somar">somar</option>
+        <option value="subtrair">subtrair</option>
+        <option value="dividir">dividir</option>
+        <option value="multiplicar">multiplicar</option>
+</select>
     <input type="submit">
 </form> 
 
 Answer: <?php
-if (isset($_GET["number1"]) && isset($_GET["number2"])) {
-    echo $_GET["number1"] + $_GET["number2"];
+if (isset($_GET["number1"]) && isset($_GET["number2"]) && isset($_GET["operação"])) {
+   
+    $number1 = $_GET["number1"];
+    $number2 = $_GET["number2"];
+    $operação = $_GET["operação"];
+    
+    switch ($operação) {
+        case "somar":
+            echo $number1 + $number2;
+            break;
+        case "subtrair":
+            echo $number1 - $number2;
+            break;
+        case "dividir":
+            if ($number2 != 0) {
+                echo $number1 / $number2;
+            } else {
+                echo "Erro: Divisão por zero!";
+            }
+            break;
+        case "multiplicar":
+            echo $number1 * $number2;
+            break;
+        default:
+            echo "Operação inválida.";
+    }
 } else {
-    echo "Please enter both numbers.";
+    echo "Por favor, insira ambos os números e selecione uma operação.";
 }
 ?>
+
 <!-- pelo que entendi o "echo" funciona com oum "sysout"-->
 
 
