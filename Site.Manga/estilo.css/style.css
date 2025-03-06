@@ -1,0 +1,30 @@
+*{
+margin: 0;
+
+}
+
+body{
+    height: 1000px;
+}
+
+.container{
+    background-color: aqua;
+ display: flex;
+ gap: 20px;
+}
+
+.link{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius:20px;
+    background-color: blueviolet;
+    text-transform: none;
+    padding: 5px;
+}
+
+.link:hover{
+    transition:0.75s ;
+    background-color: yellow;
+    color:dark;
+}
